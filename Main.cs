@@ -1,4 +1,4 @@
-﻿using ABI_RC.Core.Networking.Guardian;
+using ABI_RC.Core.Networking.Guardian;
 using HarmonyLib;
 using HUDMessageFix;
 using MelonLoader;
@@ -19,7 +19,7 @@ public static class Patches {
         Patch(harmonyInstance, "ViewDropTextImmediate");
         Patch(harmonyInstance, "ViewDropTextLong");
         Patch(harmonyInstance, "ViewDropTextLonger");
-        PatchGuardian(harmonyInstance, "ViewGuardianDropText");
+        PatchGuardian(harmonyInstance, "ViewGuardianDropText"); // Thanks to shinter for this patch
         //Patch(harmonyInstance, "ViewDropText", new Type[] { typeof(string), typeof(string), typeof(string) });
         //Patch(harmonyInstance, "ViewDropText", new Type[] { typeof(string), typeof(string) });
         MelonLogger.Msg("Harmony patches completed!");
